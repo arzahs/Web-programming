@@ -1,0 +1,119 @@
+#centeredmenu {
+   float:left;
+   clear:both;
+   margin:0;
+   padding:0;
+   width:100%;
+   background:#FFF;
+   border-bottom:4px solid #000;
+   font-size:90%;
+   z-index:1000;  
+   position:relative;
+}
+#centeredmenu ul {
+   clear:left;
+   float:right;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+   text-align:center;
+}
+#centeredmenu ul li {
+   display:block;
+   float:left;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   top:1px;
+}
+#centeredmenu ul li a {
+  display:block;
+	margin:0;
+	padding:.6em .5em .4em;
+	font-size:1em;
+	line-height:1em;
+	background:#ddd;
+	text-decoration:none;
+	color:#444;
+	font-weight:bold;
+	border-bottom:1px solid #000;
+}
+#centeredmenu ul li.active a {
+	color:#fff;
+	background:#000;
+}
+#centeredmenu ul li a:hover {
+  background:#36f;
+	color:#fff;
+	border-bottom:1px solid #03f;
+}
+#centeredmenu ul li:hover a,
+#centeredmenu ul li.hover a { 
+	background:#36f; 
+	color:#fff;
+	border-bottom:1px solid #03f;
+}
+
+/* Подпункты */
+#centeredmenu ul ul {
+	display:none; /* Подпункты скрыты по умолчанию */
+	position:absolute;
+	top:2em;
+	left:0;
+	float:left;
+	right:auto; /* Сбрасываем установки свойства right:50% родительского элемента ul */
+	width:10em; /* Ширина выпадающего меню */
+}
+#centeredmenu ul ul li {
+	left:auto;  /*Сбрасываем установки свойства left:50% родительского элемента li */
+	margin:0; /* Reset the 1px margin from the top menu */
+	clear:left;
+	float:left;
+	width:100%;
+}
+#centeredmenu ul ul li a,
+#centeredmenu ul li.active li a,
+#centeredmenu ul li:hover ul li a,
+#centeredmenu ul li.hover ul li a { /* Данная строка требуется для IE 6 */
+	font-size:.8em;
+	font-weight:normal; /* Сбрасываем установки жирного шрифта для пунктов верхнего уровня меню */
+	background:#eee;
+	color:#444;
+	line-height:1.4em; /* Изменяем значение значение свойства line-height */
+	border-bottom:1px solid #ddd; /* Горизонтальная линия для пункта подменю */
+	float:left;
+	width:100%;
+}
+#centeredmenu ul ul li a:hover,
+#centeredmenu ul li.active ul li a:hover,
+#centeredmenu ul li:hover ul li a:hover,
+#centeredmenu ul li.hover ul li a:hover { /* Данная строка требуется для IE 6 */
+	background:#36f; /* Цвет фона пункта подменю */
+	color:#fff;
+	float:left;
+}
+
+/* Переставляем последнее подменю так, что оно находится внутри страницы */
+#centeredmenu ul ul.last {
+	left:auto; /* Сбрасываем значение свойства left:0; */
+	right:0; /* Устанавливаем значение для свойства right */
+}
+#centeredmenu ul ul.last li {
+	float:right;
+	position:relative;
+	right:.8em;
+}
+
+/* Выводим подменю при наведении курсора мыши на пункт основного меню */
+#centeredmenu ul li:hover ul,
+#centeredmenu ul li.hover ul { /*Данная строка требуется для IE 6 */
+	display:block; /* Выводим подменю */
+}
+.cit{
+	 color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
