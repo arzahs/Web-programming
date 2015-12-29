@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Window</title>
+<script>
+	window.addEventListener("load", function(){
+		var openButton = document.querySelector("#open");
+		var closeButton = document.querySelector("#close");
+		var newWindow;
+		openButton.addEventListener("click", function(){
+			var link = document.querySelector("#link").value;
+			newWindow = window.open(link);
+
+		});
+		closeButton.addEventListener("click", function(){
+			newWindow.close();
+		});
+	});
+</script>
+</head>
+<body>
+	<h2>Работа с окнами</h2>
+	<input type="text" id="link" value="http:\\">
+	<input type="button" id="open" value="Открыть окно">
+	<input type="button" id="close" value="Закрыть окно">
+</body>
+</html>

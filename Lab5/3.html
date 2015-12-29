@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Перемешать</title>
+	<script>
+		window.addEventListener("load", function(){
+		var click = document.querySelector("#button");
+		function shuffle(array) {
+    var counter = array.length, temp, index;
+
+    // While there are elements in the array
+    while (counter > 0) {
+        // Pick a random index
+        index = Math.floor(Math.random() * counter);
+
+        // Decrease counter by 1
+        counter--;
+
+        // And swap the last element with it
+        temp = array[counter];
+        array[counter] = array[index];
+        array[index] = temp;
+    }
+
+    return array;
+}
+		click.addEventListener("click", function(){
+			var string = document.querySelector('#string').value.split("");
+			console.log(string);
+			var str = shuffle(string);
+			console.log(str);
+			document.querySelector("#result").innerHTML = str;
+		});
+	});
+	</script>
+</head>
+<body>
+	<h2>Перемешать литералы</h2>
+	<input type="text" id="string">
+	<input type="button" id="button" value="Перемешать">
+	<br>
+	Результат: <p id="result"></p> 
+</body>
+</html>
