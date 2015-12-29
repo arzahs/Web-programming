@@ -1,0 +1,76 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small,  strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+section, article, aside, header, footer, nav, dialog, figure {
+	display:block;
+}
+
+body {
+	background: url(background.png);
+	width:600px;
+	margin: 40px auto 0;
+	font-family: Georgia, serif;
+	color: #333333;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom:1em;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	padding: 8px 15px;
+	margin: 10px 0;
+}
+
+ul li:nth-child(odd) {
+	background: rgba(50,50,50,0.1);
+}
+
+ul li:nth-child(odd):hover {
+	background: rgba(50,50,50,0.3);	
+}
+
+ul li:nth-child(even) {
+	background: rgba(50,50,50,0.3);
+}
+
+ul li:nth-child(even):hover {
+	background: rgba(50,50,50,0.5);
+}
+
+ul li:nth-child(3n+1) {
+	-webkit-transform:rotate(-0.6deg);
+	-moz-transform:rotate(-0.6deg);
+	transform:rotate(-0.6deg);
+}
+
+ul li:nth-child(3n+2) {
+	-webkit-transform:rotate(0.5deg);
+	-moz-transform:rotate(0.5deg);
+	transform:rotate(0.5deg);
+}
+
+ul li:nth-child(3n+3) {
+	-webkit-transform:rotate(0.2deg);
+	-moz-transform:rotate(0.2deg);
+	transform:rotate(0.2deg);
+}
