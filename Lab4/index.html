@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<title>Form</title>
+	<script src="main.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+   		<div class="col-md-8 col-md-offset-2">
+   			<div class="wrapper"><h1>Registration</h1></div>
+    		<p class="bg-danger"></p>
+    		<p class="bg-success"></p>
+    		<div class="panel panel-default">
+        		<div class="panel-heading">
+        			<div class="input-group">
+      					<form action="test" method="post">
+      						<label for="inputLogin">Логин:</label>
+      						<br>
+							<input type="text" name="login" id="inputLogin">
+							<br>
+							<label for="inputPasword">Пароль(6-10 символов от a-z):</label>
+							<br>
+							<input type="password" id="inputPassword" name="password2">
+							<br>
+							<label for="inputPasword2">Повтор пароля:</label>
+							<br>
+							<input type="password" id="inputPassword2" name="password2">
+							<br>
+							<label for="">Пол:</label>
+							<div class="radio">
+  								<label><input type="radio" name="optradio" id="male" value="Мужской">Мужской</label>
+								</div>
+								<div class="radio">
+								  <label><input type="radio" name="optradio" id="female" value="Женский">Женский</label>
+								</div>
+							<br>
+							<label for="informaton">Где вы услашали о нашем сайте?</label>
+							<select id="information" name=inf>
+    							<option value=friend checked>Друзья
+							    <option value=reklam>Реклама
+							    <option value=tv>Телевиденье
+							</select>
+							<br>
+							<label class="checkbox-inline"><input type="checkbox" id="licenze">Я принимаю лицензионное соглашение</label>
+							<br>
+							<label for="comment">Comment:</label>
+							
+  							<textarea class="form-control" rows="5" id="comment"></textarea>
+							<br>
+							
+							<input style="margin-top:10px;" class="btn btn-default" type="button" value="Регестрация">
+							
+						</form>
+   			 		</div>
+  			</div>
+		</div>
+	
+</body>
+</html>
